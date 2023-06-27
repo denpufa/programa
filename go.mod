@@ -1,4 +1,4 @@
-module github.com/depufa/programa
+module github.com/denpufa/programa
 
 go 1.13
 
