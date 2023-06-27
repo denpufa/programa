@@ -114,7 +114,7 @@ func Executar(){
 			fmt.Scanln(&alturaPiramide)
 
 			volume,err_v := volume.CalcularVolumePiramide(baseQuadrado,alturaPiramide)
-			area,err_a := are.CalcularPiramideArea(baseQuadrado,faceTriangulo,alturaTriangulo)
+			area,err_a := area.CalcularPiramideArea(baseQuadrado,faceTriangulo,alturaTriangulo)
 
 			if err_v != nil {
 				fmt.Printf("%v\n", err)
@@ -134,7 +134,7 @@ func Executar(){
 			fmt.Scanln(&ladoQuadrado)
 
 			volume,err_v := volume.CalcularVolumeCubo(ladoQuadrado)
-			area,err_a := are.CalcularCuboArea(ladoQuadrado)
+			area,err_a := area.CalcularCuboArea(ladoQuadrado)
 
 			if err_v != nil {
 				fmt.Printf("%v\n", err)
@@ -157,7 +157,7 @@ func Executar(){
 			fmt.Scanln(&comprimento)
 
 			volume,err_v := volume.CalcularVolumeParalelepipedo(comprimento,largura,alturaBase)
-			area,err_a := are.CalcularParalelepipedoArea(comprimento,largura,alturaBase)
+			area,err_a := area.CalcularParalelepipedoArea(comprimento,largura,alturaBase)
 
 			if err_v != nil {
 				fmt.Printf("%v\n", err)
@@ -177,7 +177,7 @@ func Executar(){
 			fmt.Scanln(&raio)
 
 			volume,err_v := volume.CalcularVolumeEsfera(raio)
-			area,err_a := are.CalcularEsferaArea(raio)
+			area,err_a := area.CalcularEsferaArea(raio)
 
 			if err_v != nil {
 				fmt.Printf("%v\n", err)
