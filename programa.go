@@ -37,11 +37,11 @@ func Executar(){
 			area,err_a := area.CalcularTrianguloArea(base,altura)
 			perimetro,err_p := perimetro.CalcularPerimetroTriangulo(base)
 			if err_a != nil {
-					fmt.Printf("%v\n", err)
+					fmt.Printf("%v\n", err_a)
 					continue
 				}
 			if err_p != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_p)
 					continue
 			}
 			fmt.Printf("Àrea do triângulo: %v\n",area)
@@ -56,11 +56,11 @@ func Executar(){
 			area,err_a := area.CalcularRetanguloArea(base,altura)
 			perimetro,err_p := perimetro.CalcularPerimetroRetangulo(base,altura)
 			if err_a != nil {
-					fmt.Printf("%v\n", err)
+					fmt.Printf("%v\n", err_a)
 					continue
 				}
 			if err_p != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_p)
 					continue
 			}
 			fmt.Printf("Àrea do retângulo: %v\n",area)
@@ -73,11 +73,11 @@ func Executar(){
 			area,err_a := area.CalcularQuadradoArea(lado)
 			perimetro,err_p := perimetro.CalcularPerimetroQuadrado(lado)
 			if err_a != nil {
-					fmt.Printf("%v\n", err)
+					fmt.Printf("%v\n", err_a)
 					continue
 				}
 			if err_p != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_p)
 					continue
 			}
 			fmt.Printf("Àrea do quadrado: %v\n",area)
@@ -92,11 +92,11 @@ func Executar(){
 			area,err_a := area.CalcularCirculoArea(raio)
 			perimetro,err_p := perimetro.CalcularPerimetroCirculo(raio)
 			if err_a != nil {
-					fmt.Printf("%v\n", err)
+					fmt.Printf("%v\n", err_a)
 					continue
 				}
 			if err_p != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_p)
 					continue
 			}
 			fmt.Printf("Àrea do circulo: %v\n",area)
@@ -107,7 +107,7 @@ func Executar(){
 			fmt.Print("\nDigite o tamanho do lado da base do quadrado da pirâmide: ")
 			fmt.Scanln(&baseQuadrado)
 			fmt.Print("\nDigite o tamanho do lado  do triângulo de face da pirâmide: ")
-			fmt.Scanln(&baseTriangulo)
+			fmt.Scanln(&faceTriangulo)
 			fmt.Print("\nDigite a altura do triângulo lateral da pirâmide: ")
 			fmt.Scanln(&alturaTriangulo)
 			fmt.Print("\nDigite a altura da pirâmide: ")
@@ -117,11 +117,11 @@ func Executar(){
 			area,err_a := area.CalcularPiramideArea(baseQuadrado,faceTriangulo,alturaTriangulo)
 
 			if err_v != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_v)
 					continue
 			}
 			if err_a != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_a)
 				continue
 			}
 
@@ -129,7 +129,7 @@ func Executar(){
 			fmt.Printf("O valor da àrea da pirâmide é: %v\n", area)
 
 		case 6:
-			var ladoQuadrado float64
+			var ladoQuadrado float32
 			fmt.Print("\nDigite o lado do quadrado da base do cubo: ")
 			fmt.Scanln(&ladoQuadrado)
 
@@ -137,18 +137,18 @@ func Executar(){
 			area,err_a := area.CalcularCuboArea(ladoQuadrado)
 
 			if err_v != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_v)
 					continue
 			}
 			if err_a != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_a)
 				continue
 			}
 
 			fmt.Printf("O valor do volume do cubo é: %v\n",volume)
 			fmt.Printf("O valor da àrea do cubo é: %v\n", area)
 		case 7:
-			var altura, largura, comprimento float64
+			var altura, largura, comprimento float32
 			fmt.Print("Digite a altura do paralelepípedo: ")
 			fmt.Scanln(&altura)
 			fmt.Print("Digite a largura do paralelepípedo: ")
@@ -156,15 +156,15 @@ func Executar(){
 			fmt.Print("Digite o comprimento do paralelepípedo: ")
 			fmt.Scanln(&comprimento)
 
-			volume,err_v := volume.CalcularVolumeParalelepipedo(comprimento,largura,alturaBase)
-			area,err_a := area.CalcularParalelepipedoArea(comprimento,largura,alturaBase)
+			volume,err_v := volume.CalcularVolumeParalelepipedo(comprimento,largura,altura)
+			area,err_a := area.CalcularParalelepipedoArea(comprimento,largura,altura)
 
 			if err_v != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_v)
 					continue
 			}
 			if err_a != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_a)
 				continue
 			}
 
@@ -180,11 +180,11 @@ func Executar(){
 			area,err_a := area.CalcularEsferaArea(raio)
 
 			if err_v != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_v)
 					continue
 			}
 			if err_a != nil {
-				fmt.Printf("%v\n", err)
+				fmt.Printf("%v\n", err_a)
 				continue
 			}
 

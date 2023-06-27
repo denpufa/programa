@@ -1,5 +1,7 @@
 github.com/denpufa/area v0.0.0-20230627190342-054ad1632bef h1:suCo4SX/Bdgr9G4R0oCAUOURvqWXpCYYgWNBKjcX6F8=
 github.com/denpufa/area v0.0.0-20230627190342-054ad1632bef/go.mod h1:Qv829AYb9CW4X/ZqDQFe6jXERSvYKkIypQ7g47sHzzU=
+github.com/denpufa/area v0.0.0-20230627204706-cff9971d8cfe h1:n4HV/ohLc/7nCLy2X5V+ndPdp+B0lJIpYLI7evGPWmo=
+github.com/denpufa/area v0.0.0-20230627204706-cff9971d8cfe/go.mod h1:Qv829AYb9CW4X/ZqDQFe6jXERSvYKkIypQ7g47sHzzU=
 github.com/denpufa/perimetro v0.0.0-20230627193936-9fa605aed44e h1:aE8TvGP6gi3UEwHc7+iQprwlJjM8ZI9o+4beyv2F+rc=
 github.com/denpufa/perimetro v0.0.0-20230627193936-9fa605aed44e/go.mod h1:N5b2CH+cMpqBmsK+E2e5pnFK/k9Zv9TrAjDlV3i9IHM=
 github.com/denpufa/volume v0.0.0-20230627191458-22c49800ce58 h1:G6BQUaS2bsxMI1WiOjVSdYhGkaxWWPXnMuf2CxRlU1c=
